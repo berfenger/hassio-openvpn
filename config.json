@@ -1,18 +1,17 @@
 {
-    "name": "OpenVPN Server",
-    "version": "1",
+    "name": "OpenVPN Client",
+    "url": "https://github.com/berfenger/hassio-openvpn",
+    "version": "0.2",
     "slug": "openvpn",
-    "description": "Runs a openvpn server",
-    "startup": "before",
+    "description": "Runs an OpenVPN client",
+    "startup": "application",
     "boot": "auto",
     "host_network": true,
     "privileged": ["NET_ADMIN"],
     "options": {
-      "config": "",
-      "key": ""
+      "archive": ""
     },
     "schema": {
-      "config": "str",
-      "key": "str"
+      "archive": "str"
     }
   }
